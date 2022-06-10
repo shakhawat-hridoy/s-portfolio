@@ -1,25 +1,63 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 
-const Intro = () => {
+function ContactForm() {
+  const [state, handleSubmit] = useForm("xdobjdjo");
+
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
+
   return (
-    <div className="sm:text-center sm:my-8 lg:my-24 text-white">
-      <h2 className="font-bold">About Me</h2>
-      <div className="flex lg:flex-row sm:flex-col ">
-        <div>
-          <h2 className="font-bold">Shakhawat Says Hello!!</h2>
-        </div>
-        <div className="">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id nisi
-            ducimus error! Voluptatum, possimus voluptatem! Quis ipsum,
-            voluptatibus possimus doloribus delectus doloremque cum consectetur
-            laboriosam. Assumenda dolore repellat quos consequuntur, temporibus
-            sit tenetur nihil impedit dolorum, animi esse! Cumque, dicta.
-          </p>
-        </div>
-      </div>
+    <div className="bg-accent text-primary ">
+      <form onSubmit={handleSubmit}>
+        <label htmlFor="email">Email Address: </label>
+
+        <input
+          type="email"
+          name="email"
+          placeholder="email "
+          class="input input-bordered input-primary w-full max-w-xs"
+        />
+        <br />
+
+        <label htmlFor="subject"> Email Subject: </label>
+        <input
+          type="text"
+          name="subject"
+          placeholder=" Subject"
+          class="input input-bordered input-primary w-full max-w-xs"
+        />
+        <br />
+
+        <label htmlFor="message"> Your Message: </label>
+        <input
+          type="text"
+          name="message"
+          placeholder=" message"
+          class="input input-bordered input-primary w-full max-w-xs"
+        />
+
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <textarea id="message" name="message" />
+
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
+        <button
+          className="btn btn-primary"
+          type="submit"
+          disabled={state.submitting}
+        >
+          Submit
+        </button>
+      </form>
     </div>
   );
-};
-
-export default Intro;
+}
+function App() {
+  return <ContactForm />;
+}
+export default App;

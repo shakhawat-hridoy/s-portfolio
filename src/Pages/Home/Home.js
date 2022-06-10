@@ -1,4 +1,5 @@
 import React from "react";
+import Projects from "../Projects/Projects";
 import Navbar from "../Shared/Navbar";
 import Banner from "./Banner";
 import Intro from "./Intro";
@@ -7,11 +8,10 @@ import Skills from "./Skills";
 const Home = () => {
   return (
     <div>
-      <Navbar></Navbar>
       <Banner></Banner>
-      <Intro></Intro>
+      {/* <Intro></Intro> */}
       <Skills></Skills>
-      <h2>Home</h2>
+      <Projects></Projects>
     </div>
   );
 };

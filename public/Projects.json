@@ -1,0 +1,61 @@
+[
+    {
+        "id":1,
+        "name":"Perfumo",
+        "img":"https://i.ibb.co/wLXtY1z/perfumo-full-ss.png",
+        "description":"Wearhouse management site",
+        "points":
+        {
+            "point1":"• Register/login through multiple ways",
+            "point2":"• Authorized users have extra access",
+            "point3":"• Data stored permanently in database"
+        },
+        "technologies":
+        [
+            "React JS","React-Bootstrap","Node JS","Firebase","MongoDB"
+        ],
+        "type":"full",
+        "live_link":"https://assignment11-7cc83.web.app",
+        "git_client":"https://github.com/shakhawat-hridoy/perfume-warehouse-client",
+        "git_server":"https://github.com/shakhawat-hridoy/perfume-warehouse-server"
+    },
+    {
+        "id":2,
+        "name":"Photographer",
+        "img":"https://i.ibb.co/4Y3PLx9/photographer-full-ss.png",
+        "description":"A  website for individual service provider",
+        "points":
+        {
+            "point1":"• Register/login through multiple ways",
+            "point2":"• Authorized users have extra access",
+            "point3":"• Data stored permanently in database"
+        },
+        "technologies":
+        [
+            "React JS","React-Bootstrap","Firebase","react-firebase-hooks"
+        ],
+        "type":"front",
+        "live_link":"https://photographer-hr.netlify.app/",
+        "git_link":"https://github.com/shakhawat-hridoy/independent-photographer"
+    },
+    {
+        "id":3,
+        "img":"https://i.ibb.co/GPh32Jx/watch-review-full-ss.png",
+        "name":"Watch Review",
+        "description":"API based review displaying site",
+        "points":
+        {
+            "point1":"• Shows limited reviews on the homepage",
+            "point2":"• Another route is there to see all comments",
+            "point3":"• API integration"
+        },
+        "technologies":
+        [
+            "React JS","Tailwind CSS","React Router","Firebase","Netlify"
+        ],
+        "type":"front",
+        "live_link":"https://watch-review.netlify.app/",
+        "git_link":"https://github.com/shakhawat-hridoy/watch-review"
+
+    }
+]
