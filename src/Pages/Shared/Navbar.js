@@ -5,7 +5,7 @@ import monogram from "../../images/my monogram.jpg";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-accent text-white">
+      <div className="navbar bg-neutral text-white px-16">
         <div className="navbar-start">
           <img className="h-12 w-20 -mr-2" src={monogram} alt="" />
           <Link
@@ -18,9 +18,9 @@ const Navbar = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
+            {/* <li>
+              <a href="contact">Contact</a>
+            </li> */}
           </ul>
         </div>
         <div className="navbar-end">

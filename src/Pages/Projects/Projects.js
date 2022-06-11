@@ -13,7 +13,7 @@ const Projects = () => {
       .then((data) => setProjects(data));
   }, []);
   return (
-    <div>
+    <div className="bg-accent p-16">
       <h2 className="text-white text-2xl font-bold">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {projects.map((project) => (

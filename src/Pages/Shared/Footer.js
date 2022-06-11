@@ -3,69 +3,35 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <hr className="mt-24" />
-      <footer className="footer items-center p-4 text-neutral-content mt-24">
+      <footer className="footer bg-accent items-center text-neutral-content px-16 py-12  ">
         <div className="items-center grid-flow-col">
           <p>
-            {" "}
-            &copy; Shakhawat Hossain - All right reserved{" "}
-            {new Date().getFullYear()}
+            &copy; Shakhawat Hossain {new Date().getFullYear()}
+            <br /> All right reserved
           </p>
         </div>
 
-        {/* form section  */}
-        {/* contact me  */}
-        <div className="flex justify-center items-center">
-          <div>
-            <h2 className="font-bold text-center my-4 ">Contact Me</h2>
-            <form
-              action="https://formsubmit.co/551eab1b16c484228fba728bdffadc6d"
-              method="POST"
-            >
-              {/* name */}
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                class="input input-bordered input-primary w-full max-w-xs my-1"
-              />
-
-              {/* email */}
-              <input
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                class="input input-bordered input-primary w-full max-w-xs my-1"
-              />
-
-              {/* subject */}
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                class="input input-bordered input-primary w-full max-w-xs my-1"
-              />
-
-              {/* message */}
-              <input
-                type="text"
-                name="message"
-                placeholder="Type Your Message Here"
-                class="input input-bordered input-primary w-full max-w-xs my-1"
-              />
-              <br />
-
-              {/* send button */}
-              <input
-                type="submit"
-                value="Send"
-                class="input input-bordered btn-primary w-1/4 max-w-xs my-1"
-              />
-            </form>
-          </div>
-        </div>
-
         <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+          <div>
+            <p className="text-neutral-contenttext-xl text font-bold">
+              More Contact Info
+            </p>
+            <p className="my-2">
+              <span>
+                <b>Phone: </b>
+                +880-1521548709
+              </span>
+              <br />
+              <span>
+                <b>Email: </b>
+                shakhawat.hridoy56@gmail.com
+              </span>
+              <br />
+              <span>
+                <b>Location: </b> Chittagong, Bangladesh
+              </span>
+            </p>
+          </div>
           {/* <a></a>
           <a></a>
           <a target="_blank" href="https://www.facebook.com/shakhawat56/">

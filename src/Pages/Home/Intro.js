@@ -17,7 +17,7 @@ function ContactForm() {
           type="email"
           name="email"
           placeholder="email "
-          class="input input-bordered input-primary w-full max-w-xs"
+          className="input input-bordered input-primary w-full max-w-xs"
         />
         <br />
 
@@ -26,7 +26,7 @@ function ContactForm() {
           type="text"
           name="subject"
           placeholder=" Subject"
-          class="input input-bordered input-primary w-full max-w-xs"
+          className="input input-bordered input-primary w-full max-w-xs"
         />
         <br />
 
@@ -35,7 +35,7 @@ function ContactForm() {
           type="text"
           name="message"
           placeholder=" message"
-          class="input input-bordered input-primary w-full max-w-xs"
+          className="input input-bordered input-primary w-full max-w-xs"
         />
 
         <ValidationError prefix="Email" field="email" errors={state.errors} />
