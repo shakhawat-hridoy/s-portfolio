@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer bg-accent items-center text-neutral-content px-16 py-12  ">
+      <footer className="footer bg-accent items-center text-neutral-content px-16 py-8  ">
         <div className="items-center grid-flow-col">
           <p>
             &copy; Shakhawat Hossain {new Date().getFullYear()}

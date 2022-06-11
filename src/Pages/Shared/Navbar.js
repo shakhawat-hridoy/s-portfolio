@@ -5,7 +5,7 @@ import monogram from "../../images/my monogram.jpg";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-neutral text-white px-16">
+      <div className="navbar bg-neutral text-white px-16 py-4">
         <div className="navbar-start">
           <img className="h-12 w-20 -mr-2" src={monogram} alt="" />
           <Link
